@@ -1,0 +1,36 @@
+{
+  "name": "acconuter-backend",
+  "version": "1.0.0",
+  "description": "Backend for Acconuter记账应用",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node tests/supabase-smoke.js",
+    "migrate:prepare": "node scripts/prepare_migration.mjs",
+    "migrate:sample": "node scripts/generate_sample_migration.mjs",
+    "migrate:run": "node scripts/migrate_from_mongo_to_supabase.mjs",
+    "migrate:verify": "node scripts/verify_supabase_counts.mjs"
+  },
+  "keywords": [
+    "acconuter",
+    "backend",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.10",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.1",
+    "winston": "^3.18.3"
+  }
+}
