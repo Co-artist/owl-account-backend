@@ -6,14 +6,14 @@ const router = Router();
 router.get('/check', (req, res) => {
   res.json({
     // 当前最新版本号 (当您想发布更新时，修改这个版本号，例如 '1.0.1')
-    version: '0.0.3',
+    version: '0.0.4',
     
     // 更新包下载地址 (将 dist-xxx.zip 上传到云存储或服务器后的直链)
     // 使用 Render 的 URL
-    url: 'https://owl-account-backend.onrender.com/updates/dist-0.0.3.zip',
+    url: 'https://owl-account-backend.onrender.com/updates/dist-0.0.4.zip',
     
     // 可选：更新说明
-    note: 'Add swipe navigation between main tabs'
+    note: 'Swipe navigation between main tabs; bug fixes'
   });
 });
 
